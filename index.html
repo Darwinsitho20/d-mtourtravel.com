@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Turismo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: justify; /* Justifica el texto */
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .banner {
+            background: url('https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-1024x767.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2em;
+        }
+        .section {
+            padding: 20px;
+            text-align: justify; /* Justifica el texto en secciones */
+        }
+        h2, h3 {
+            text-align: center;
+            position: relative;
+        }
+        h2::after, h3::after {
+            content: '';
+            display: block;
+            width: 80%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.1); /* Línea semitransparente */
+            margin: 10px auto 0;
+        }
+        .destino {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Efecto de transición */
+        }
+        .destino:hover {
+            transform: scale(1.05); /* Agranda el cuadro al pasar el mouse */
+        }
+        .destino img {
+            width: 100%;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        form button {
+            display: block;
+            width: 100px; /* Ajusta el ancho del botón */
+            margin: 0 auto; /* Centra el botón */
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .galeria img {
+            width: 30%;
+            margin: 1%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+        .cuadro-info {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .circulos {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .circulos a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: white;
+            overflow: hidden;
+            text-align: center;
+            line-height: 40px; /* Centrar el texto verticalmente */
+        }
+        .circulos img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>D&M TOUR TRAVEL</h1>
+        <nav>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#comunicate-con-nosotros">Comunicate con nosotros</a>
+            <a href="#escribenos">Escríbenos</a> <!-- Cambiado a minúscula -->
+        </nav>
+    </header>
+    
+
+<div class="banner">
+    <h2>Explora el mundo con nosotros</h2>
+</div>
+
+<div class="section" id="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>En Nombre de la Agencia D&M TOUR TRAVEL, nos especializamos en ofrecer experiencias inolvidables a todos los turistas que visitan la hermosa zona sur de Nuquí. Como agencia local, nuestro compromiso es recibir y acoger a cada viajero con la hospitalidad y calidez que caracteriza a esta región del Pacífico colombiano. Nos dedicamos a mostrar la impresionante biodiversidad, la rica cultura afrocolombiana, y los paisajes naturales únicos de este paraíso tropical.
+
+        Ofrecemos una variedad de actividades personalizadas, desde el avistamiento de ballenas jorobadas hasta caminatas ecológicas por la selva, además de visitas a las playas más escondidas y tranquilas de la zona. Nuestro equipo está formado por guías locales expertos, profundamente conectados con la comunidad y el entorno, garantizando no solo una aventura extraordinaria, sino también un viaje responsable y sostenible.
+        
+        Con nosotros, vivirás la esencia auténtica de Nuquí, conectándote con la naturaleza y las personas que hacen de este lugar algo verdaderamente especial. ¡Deja que te guiemos en una experiencia inolvidable por uno de los rincones más mágicos del Pacífico colombiano!</p>
+</div>
+
+<div class="section" id="destinos">
+    <h2>Destinos</h2>
+    <div class="destino">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/423396672.jpg?k=0975c6a16c5db17590fad1e18c708dcd1335220f354847388afef04e110dc007&o=&hp=1" alt="Destino 1">
+        <h3>Arusi (Nuquí)</h3>
+    <p>Arusi es un encantador paraíso escondido en la costa del Pacífico colombiano, conocido por su belleza natural y su ambiente tranquilo. Este destino es famoso por sus playas de arena blanca y aguas cristalinas, rodeadas de exuberante vegetación tropical. Los visitantes pueden disfrutar de actividades como el avistamiento de ballenas, paseos en canoa por los manglares y exploraciones de la biodiversidad local. La cultura afrocolombiana de Arusi también es un atractivo, con su música y tradiciones que ofrecen una experiencia auténtica y única. Un lugar perfecto para aquellos que buscan desconectar y disfrutar de la naturaleza en su estado más puro.</p>
+    </div>
+    <div class="destino">
+        <img src="https://elperiodicodechia.com/wp-content/uploads/2017/08/epdc-Col-170802-Turismo-2-1024x682.jpg" alt="Destino 2">
+        <h3>Apartadó (Nuquí)</h3>
+    <p>Apartadó, un lugar lleno de encanto, es famoso por su impresionante biodiversidad y su cultura vibrante. Este destino ofrece una experiencia inolvidable, combinando la belleza de la selva con las impresionantes vistas del océano Pacífico. Los visitantes pueden explorar rutas ecoturísticas, disfrutar de la deliciosa gastronomía local y sumergirse en las tradiciones de las comunidades locales. Las actividades incluyen senderismo, avistamiento de aves y la oportunidad de conocer la vida cotidiana de los pescadores. Apartadó es ideal para aquellos que buscan aventura, naturaleza y la posibilidad de vivir una experiencia auténtica en el corazón del Chocó.</p>
+    </div>
+    <div class="destino">
+        <img src="https://www.esariri.com/wp-content/uploads/2022/08/Pozo-Termales.jpg" alt="Destino 3">
+        <h3>Termales (Nuquí)</h3>
+    <p>Los Termales de Nuquí son un destino mágico, donde la naturaleza se encuentra con la relajación. Este lugar es conocido por sus aguas termales ricas en minerales, que brotan en medio de la selva, creando un ambiente idílico para desconectar y rejuvenecer. Los visitantes pueden disfrutar de baños relajantes rodeados de paisajes impresionantes, y también participar en actividades como caminatas por la selva y avistamiento de flora y fauna. Los Termales ofrecen una experiencia única para quienes buscan tranquilidad y bienestar en un entorno natural excepcional.</p>
+    </div>
+</div>
+
+<div class="section" id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-nuqui-pacifique-voyage-colombie-1024x767.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 1">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-104.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 2">
+        <img src="https://choco7dias.com/wp-content/uploads/2020/05/playa-brava-arusi-nuqui-choco.jpg" alt="Galería 3">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/65/75/22/caption.jpg?w=600&h=400&s=1" alt="Galería 4">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-40-768x1024.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 5">
+        <img src="https://caminantesdelretorno.com/wp-content/uploads/2021/10/Nuqui-Arusi-Junio-de-2011-469.jpg" alt="Galería 6">
+        <img src="https://blog.redbus.co/wp-content/uploads/2019/10/nuqui-choco-colombia.jpg" alt="Galería 7">
+        <img src="https://choco7dias.com/wp-content/uploads/2020/11/costa-pacifica-arusi-nuqui-choco-750x375.jpg" alt="Galería 8">
+        <img src="https://verdadabierta.com/wp-content/uploads/2017/10/turismo-nuqui-1.jpg" alt="Galería 9">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/SB4ZQJ2QMNDO7AHRG6DDQF77XQ.jpg" alt="Galería 10">
+        <img src="https://viajesvivemar.com/wp-content/uploads/2023/03/49977305507_cade860c21_k.jpg" alt="Galería 11">
+        <img src="https://saborenlamesa.com/wp-content/uploads/2021/04/que-hacer-nuqui-3-768x1024.jpg" alt="Galería 12">
+        <img src="https://saborenlamesa.com/wp-content/uploads/2021/04/que-hacer-nuqui-1-768x1024.jpg" alt="Galería 13">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-24.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&fit=825%2C550&ssl=1" alt="Galería 14">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-29-768x1024.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 15">
+        <img src="https://ee2f8znn6mv.exactdn.com/wp-content/uploads/2022/04/arusi-village-du-pacifique-autour-de-nuqui-63-765x574.jpg?lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 16">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-55.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&fit=825%2C619&ssl=1" alt="Galería 17">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-68-1024x768.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 18">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/U4IBEODH2ZAO5I3ETLBYM6CYGI.jpg" alt="Galería 19">
+        <img src="https://www.colombiatudestino.com/viajes/wp-content/uploads/2018/03/destacada.jpg" alt="Galería 20">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-54.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&fit=825%2C619&ssl=1" alt="Galería 21">
+        <img src="https://saborenlamesa.com/wp-content/uploads/2021/04/que-comer-3-768x1024.jpg" alt="Galería 22">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-12-768x1024.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 23">
+        <img src="https://ecoglobalexpeditions.com/wp-content/uploads/2022/04/Portada-Plan-selva.jpg" alt="Galería 24">
+        <img src="https://en77jjzp3wa.exactdn.com/wp-content/uploads/2022/04/arusi-una-perla-del-pacifico-cerca-de-nuqui-2-768x576.jpg?strip=all&lossy=1&quality=60&webp=60&sharp=1&ssl=1" alt="Galería 25">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/43/42/f2/termales-nuqui-es-un.jpg" alt="Galería 26">
+        <img src="https://awake.travel/storage/courses/1695748724340006.jpg?v=M0Y0T1cB05YZsKbp" alt="Galería 27">
+        <img src="https://saborenlamesa.com/wp-content/uploads/2021/04/termales-1-768x1024.jpg" alt="Galería 28">
+        <img src="https://awake.travel/blog/wp-content/uploads/2019/10/Nuqui%CC%81-2.jpg" alt="Galería 29">
+        <img src="https://www.esariri.com/wp-content/uploads/2022/12/DJI_0490-scaled.jpg" alt="Galería 30">
+    </div>
+</div>
+
+<div class="cuadro-info" id="comunicate-con-nosotros">
+    <h2>Comunicate con nosotros</h2>
+    <p><strong>AGENCIA:</strong> D&M TOUR TRAVEL<br>
+    <strong>NUMERO:</strong> 3233992210<br>
+    <strong>NIT:</strong> 9984728492<br>
+    <strong>CORREO DE LA AGENCIA:</strong> daranhogo@outlook.com</p>
+    <div class="circulos">
+        <a href="https://web.whatsapp.com/" class="circle"><img src="https://cdn.pixabay.com/photo/2021/12/10/16/38/whatsapp-6860919_1280.png" alt="Whatsapp"></a>
+        <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" class="circle"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/es/" class="circle"><img src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" alt="TikTok"></a>
+        <a href="https://www.instagram.com/" class="circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkd5Rwc8vyTNHrS7e98W1QN1zAvWVA8Czbkg&s" alt="Instagram"></a>
+        <a href="https://www.google.com/intl/es-419/gmail/about/" class="circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vtphMtxRWfK6nO2CIbGfSETyEs79Dr6oPw&s" alt="Gmail"></a>
+        <a href="https://www.microsoft.com/es-co/microsoft-365/outlook/outlook-email-plan?ef_id=_k_CjwKCAjw0t63BhAUEiwA5xP54atu5eniyCs1LPpO74MvAbS6aC6YvOEqufeI9zDuzc5AGT3k04_NkRoC8OgQAvD_BwE_k_&OCID=AIDcmm2yn7li7u_SEM__k_CjwKCAjw0t63BhAUEiwA5xP54atu5eniyCs1LPpO74MvAbS6aC6YvOEqufeI9zDuzc5AGT3k04_NkRoC8OgQAvD_BwE_k_" class="circle"><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2PBNZ?ver=7c3e&q=90&m=6&h=270&w=270&b=%23FFFFFFFF&f=jpg&o=f&aim=true" alt="Outlook"></a>
+    </div>
+</div>
+
+<style>
+    .circulos {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espacio entre círculos */
+    }
+
+    .circle {
+        display: inline-block;
+        width: 60px; /* Tamaño del círculo */
+        height: 60px; /* Tamaño del círculo */
+        border-radius: 50%; /* Hace que el elemento sea circular */
+        background-color: white; /* Fondo blanco */
+        overflow: hidden; /* Oculta las partes de la imagen que sobresalen */
+        transition: transform 0.3s ease; /* Transición suave para el efecto de aumento */
+    }
+
+    .circle img {
+        width: 100%; /* Asegura que la imagen ocupe todo el círculo */
+        height: 100%; /* Asegura que la imagen ocupe todo el círculo */
+        object-fit: contain; /* Mantiene la proporción de la imagen */
+    }
+
+    .circle:hover {
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+    }
+</style>
+
+
+<div class="section" id="escribenos"> <!-- Asegúrate de que el id coincida -->
+    <h2>Escríbenos</h2>
+    <form id="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="email" placeholder="Correo" required>
+        <input type="text" placeholder="Nacionalidad" required>
+        <input type="tel" placeholder="Número de Tel/WhatsApp" required>
+        <input type="date" placeholder="Fecha deseada" required>
+        <input type="number" placeholder="Número de Personas" required>
+        <input type="number" placeholder="Número de Noches" required>
+        <textarea rows="5" placeholder="Mensaje" required></textarea>
+        <div>
+            <input type="checkbox" id="data-authorization" required>
+            <label for="data-authorization">Doy mi consentimiento para que este sitio almacene la información que he enviado con el fin de responder a mi solicitud de acuerdo con la política de privacidad.</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<div id="confirmation-message" style="display: none; margin-top: 20px; color: green;">
+    Tu mensaje fue enviado con éxito.
+</div>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault(); // Evita el envío del formulario
+        document.getElementById('contact-form').reset(); // Reinicia el formulario
+        document.getElementById('confirmation-message').style.display = 'block'; // Muestra el mensaje de confirmación
+        return false; // Evita el comportamiento por defecto
+    }
+</script>
+
+<footer>
+    <p>&copy; 2024 D&M TOUR TRAVEL. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
